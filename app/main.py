@@ -8,7 +8,7 @@ class CleanUpFile:
     def __enter__(self) -> str:
         return self
 
-    def __exit__(self,a,b,c) -> None:
+    def __exit__(self, abc, cba, cab) -> None:
         try:
             if self.filename:
                 os.remove(self.filename)
